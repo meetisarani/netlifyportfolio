@@ -70,6 +70,15 @@ body {
   margin: auto;
 }
 
+.hireme {
+  font-weight: bolder;
+  color: #000000;
+  letter-spacing: -6.7px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  background: #0091e1;
+}
+
 h1 {
   display: block;
   font-size: 80px;
