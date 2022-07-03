@@ -8,6 +8,12 @@ body {
   color: white;
 }
 
+@media (max-width: 500px)
+body {
+    font-size: inherit;
+    text-align: center;
+}
+
 .titan-background {
   position: absolute;
   width: 100%;
