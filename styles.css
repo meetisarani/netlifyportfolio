@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter UI", sans-serif;
-  text-align: center;
   color: white;
 }
 
@@ -64,7 +63,7 @@ body {
 .marvellous-container {
   position: relative;
   z-index: 2;
-  padding: 104px 0 24px 0;
+  padding: 3% 0 1% 0;
   width: 95%;
   margin: auto;
 }
@@ -114,7 +113,7 @@ a {
 .title-marvel {
   font-weight: bolder;
   color: #000000;
-  letter-spacing: -6.7px;
+  letter-spacing: -2px;
   text-transform: uppercase;
   padding: 0 16px;
   background: #0091e1;
@@ -125,20 +124,19 @@ a {
   display: inline-block;
   font-weight: bold;
   color: #0091e1;
-  letter-spacing: -4.5px;
-  text-transform: uppercase;
+  letter-spacing: -2px;
   padding: 0 16px;
   border-color: #0091e1;
   border-top: 8px solid;
   border-bottom: 8px solid;
   line-height: 1;
+  font-size: 75%;
 }
 
 code {
   display: block;
   box-sizing: border-box;
-  text-align: center;
-  font-size: 300%;
+  font-size: 180%;
   width: 100%;
   padding: 16px 24px;
   background: rgba(0, 165, 225, 0.2);
