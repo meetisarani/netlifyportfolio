@@ -80,6 +80,11 @@ body {
   color: #000000;
   padding: 0 16px;
   background: #0091e1;
+  font-size: 70%;
+}
+
+.skillset {
+  font-size: 70%;
 }
 
 h1 {
@@ -89,6 +94,10 @@ h1 {
 }
 
 @media (max-width: 500px) {
+  body {
+    font-size: inherit;
+    text-align: center;
+  }
   h1 {
     font-size: 16vw;
   }
