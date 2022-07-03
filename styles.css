@@ -166,7 +166,7 @@ code {
 }
 
 .header {
-  margin-bottom: 104px;
+  height: 100vh;
 }
 
 .installation-instructions,
