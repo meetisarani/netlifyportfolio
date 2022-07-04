@@ -195,7 +195,6 @@ section h1 {
   white-space: nowrap;
 }
 
-#section06 { background: url(https://picsum.photos/1200/800?image=901) center center / cover no-repeat;}
 
 .demo a {
   position: absolute;
@@ -215,10 +214,10 @@ section h1 {
   opacity: .5;
 }
 
-#section06 a {
+#head-section a {
   padding-top: 70px;
 }
-#section06 a span {
+#head-section a span {
   position: absolute;
   top: 0;
   left: 50%;
