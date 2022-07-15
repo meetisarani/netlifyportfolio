@@ -9,7 +9,9 @@
   --greyDark: #9baacf;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -21,6 +23,7 @@ html {
   overflow-y: scroll;
   background: var(--greyLight-1);
 }
+
 @media screen and (min-width: 900px) {
   html {
     font-size: 75%;
@@ -58,13 +61,18 @@ html {
   grid-gap: 3rem;
   justify-self: center;
 }
+
 .switch input {
   display: none;
 }
-.switch__1, .switch__2 {
+
+.switch__1,
+.switch__2 {
   width: 6rem;
 }
-.switch__1 label, .switch__2 label {
+
+.switch__1 label,
+.switch__2 label {
   display: flex;
   align-items: center;
   width: 100%;
@@ -75,7 +83,9 @@ html {
   cursor: pointer;
   border-radius: 1.6rem;
 }
-.switch__1 label::after, .switch__2 label::after {
+
+.switch__1 label::after,
+.switch__2 label::after {
   content: "";
   position: absolute;
   left: 0.4rem;
@@ -85,7 +95,9 @@ html {
   background: var(--greyDark);
   transition: all 0.4s ease;
 }
-.switch__1 label::before, .switch__2 label::before {
+
+.switch__1 label::before,
+.switch__2 label::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -94,10 +106,12 @@ html {
   opacity: 0;
   transition: all 0.4s ease;
 }
-.switch input:checked ~ label::before {
+
+.switch input:checked~label::before {
   opacity: 1;
 }
-.switch input:checked ~ label::after {
+
+.switch input:checked~label::after {
   left: 57%;
   background: var(--greyLight-1);
 }
@@ -110,15 +124,20 @@ html {
   grid-gap: 3rem;
   justify-content: center;
 }
+
 .checkbox input {
   display: none;
 }
-.checkbox__1, .checkbox__2 {
+
+.checkbox__1,
+.checkbox__2 {
   width: 6rem;
   display: flex;
   justify-content: center;
 }
-.checkbox__1 label, .checkbox__2 label {
+
+.checkbox__1 label,
+.checkbox__2 label {
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
   cursor: pointer;
   position: relative;
@@ -129,19 +148,27 @@ html {
   width: 2.8rem;
   height: 2.8rem;
 }
-.checkbox__1 label:hover i, .checkbox__2 label:hover i {
+
+.checkbox__1 label:hover i,
+.checkbox__2 label:hover i {
   color: var(--primary);
 }
-.checkbox__1 label i, .checkbox__2 label i {
+
+.checkbox__1 label i,
+.checkbox__2 label i {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--greyDark);
   transition: 0.3s ease;
 }
-.checkbox__1 input:checked ~ label, .checkbox__2 input:checked ~ label {
+
+.checkbox__1 input:checked~label,
+.checkbox__2 input:checked~label {
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
 }
-.checkbox__1 input:checked ~ label i, .checkbox__2 input:checked ~ label i {
+
+.checkbox__1 input:checked~label i,
+.checkbox__2 input:checked~label i {
   color: var(--primary);
 }
 
@@ -152,16 +179,23 @@ html {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
+
 .radio input {
   display: none;
 }
-.radio__1 input:checked ~ label, .radio__2 input:checked ~ label {
+
+.radio__1 input:checked~label,
+.radio__2 input:checked~label {
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
 }
-.radio__1 input:checked ~ label::after, .radio__2 input:checked ~ label::after {
+
+.radio__1 input:checked~label::after,
+.radio__2 input:checked~label::after {
   background: var(--primary);
 }
-.radio__1 label, .radio__2 label {
+
+.radio__1 label,
+.radio__2 label {
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
   position: relative;
   display: flex;
@@ -172,10 +206,14 @@ html {
   height: 2.8rem;
   border-radius: 50%;
 }
-.radio__1 label:hover::after, .radio__2 label:hover::after {
+
+.radio__1 label:hover::after,
+.radio__2 label:hover::after {
   background: var(--primary);
 }
-.radio__1 label::after, .radio__2 label::after {
+
+.radio__1 label::after,
+.radio__2 label::after {
   content: "";
   position: absolute;
   width: 1.4rem;
@@ -198,6 +236,7 @@ html {
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .btn__primary {
   grid-column: 1/2;
   grid-row: 4/5;
@@ -205,23 +244,29 @@ html {
   box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark), 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
   color: var(--greyLight-1);
 }
+
 .btn__primary:hover {
   color: var(--white);
 }
+
 .btn__primary:active {
   box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
 }
+
 .btn__secondary {
   grid-column: 1/2;
   grid-row: 5/6;
   color: var(--greyDark);
 }
+
 .btn__secondary:hover {
   color: var(--primary);
 }
+
 .btn__secondary:active {
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
 }
+
 .btn p {
   font-size: 1.6rem;
 }
@@ -240,6 +285,7 @@ html {
   align-items: center;
   position: relative;
 }
+
 .clock .hand {
   position: absolute;
   transform-origin: bottom;
@@ -247,21 +293,25 @@ html {
   border-radius: 0.2rem;
   z-index: 200;
 }
+
 .clock .hours {
   width: 0.4rem;
   height: 3.2rem;
   background: var(--greyLight-3);
 }
+
 .clock .minutes {
   width: 0.4rem;
   height: 4.6rem;
   background: var(--greyDark);
 }
+
 .clock .seconds {
   width: 0.2rem;
   height: 5.2rem;
   background: var(--primary);
 }
+
 .clock .point {
   position: absolute;
   width: 0.8rem;
@@ -270,6 +320,7 @@ html {
   background: var(--primary);
   z-index: 300;
 }
+
 .clock .marker {
   width: 95%;
   height: 95%;
@@ -277,6 +328,7 @@ html {
   position: relative;
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
 }
+
 .clock .marker::after {
   content: "";
   width: 60%;
@@ -288,31 +340,43 @@ html {
   left: 20%;
   filter: blur(1px);
 }
-.clock .marker__1, .clock .marker__2, .clock .marker__3, .clock .marker__4 {
+
+.clock .marker__1,
+.clock .marker__2,
+.clock .marker__3,
+.clock .marker__4 {
   position: absolute;
   border-radius: 0.1rem;
   box-shadow: inset 1px 1px 1px var(--greyLight-2), inset -1px -1px 1px var(--white);
 }
-.clock .marker__1, .clock .marker__2 {
+
+.clock .marker__1,
+.clock .marker__2 {
   width: 0.2rem;
   height: 0.6rem;
   left: 5.6rem;
 }
-.clock .marker__3, .clock .marker__4 {
+
+.clock .marker__3,
+.clock .marker__4 {
   width: 0.6rem;
   height: 0.2rem;
   top: 5.6rem;
 }
+
 .clock .marker__1 {
   top: 2%;
 }
+
 .clock .marker__2 {
   top: 98%;
   transform: translateY(-0.6rem);
 }
+
 .clock .marker__3 {
   left: 2%;
 }
+
 .clock .marker__4 {
   left: 98%;
   transform: translateX(-0.6rem);
@@ -331,6 +395,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+
 .chip__icon {
   width: 3rem;
   height: 3rem;
@@ -342,11 +407,13 @@ html {
   font-size: 1.8rem;
   color: var(--primary);
 }
+
 .chip p {
   font-size: 0.9rem;
   margin-left: -1.8rem;
   color: var(--greyDark);
 }
+
 .chip__close {
   width: 1.6rem;
   height: 1.6rem;
@@ -370,6 +437,7 @@ html {
   justify-items: center;
   align-items: center;
 }
+
 .circle__btn {
   grid-row: 1/2;
   grid-column: 1/2;
@@ -388,25 +456,32 @@ html {
   cursor: pointer;
   position: relative;
 }
+
 .circle__btn.shadow {
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
 }
+
 .circle__btn .play {
   position: absolute;
   opacity: 0;
   transition: all 0.2s linear;
 }
+
 .circle__btn .play.visibility {
   opacity: 1;
 }
+
 .circle__btn .pause {
   position: absolute;
   transition: all 0.2s linear;
 }
+
 .circle__btn .pause.visibility {
   opacity: 0;
 }
-.circle__back-1, .circle__back-2 {
+
+.circle__back-1,
+.circle__back-2 {
   grid-row: 1/2;
   grid-column: 1/2;
   width: 6rem;
@@ -415,18 +490,22 @@ html {
   filter: blur(1px);
   z-index: 100;
 }
+
 .circle__back-1 {
   box-shadow: 0.4rem 0.4rem 0.8rem var(--greyLight-2), -0.4rem -0.4rem 0.8rem var(--white);
   background: linear-gradient(to bottom right, var(--greyLight-2) 0%, var(--white) 100%);
   animation: waves 4s linear infinite;
 }
+
 .circle__back-1.paused {
   animation-play-state: paused;
 }
+
 .circle__back-2 {
   box-shadow: 0.4rem 0.4rem 0.8rem var(--greyLight-2), -0.4rem -0.4rem 0.8rem var(--white);
   animation: waves 4s linear 2s infinite;
 }
+
 .circle__back-2.paused {
   animation-play-state: paused;
 }
@@ -436,6 +515,7 @@ html {
   grid-column: 3/4;
   grid-row: 3/4;
 }
+
 .form__input {
   width: 20.4rem;
   height: 4rem;
@@ -448,9 +528,11 @@ html {
   font-family: inherit;
   color: var(--greyDark);
 }
+
 .form__input::placeholder {
   color: var(--greyLight-3);
 }
+
 .form__input:focus {
   outline: none;
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
@@ -464,6 +546,7 @@ html {
   display: flex;
   align-items: center;
 }
+
 .search__input {
   width: 20.4rem;
   height: 4rem;
@@ -476,16 +559,20 @@ html {
   font-family: inherit;
   color: var(--greyDark);
 }
+
 .search__input::placeholder {
   color: var(--greyLight-3);
 }
+
 .search__input:focus {
   outline: none;
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
 }
-.search__input:focus + .search__icon {
+
+.search__input:focus+.search__icon {
   color: var(--primary);
 }
+
 .search__icon {
   height: 2rem;
   position: absolute;
@@ -508,14 +595,19 @@ html {
   align-items: center;
   position: relative;
 }
+
 .segmented-control input {
   display: none;
 }
-.segmented-control > input:checked + label {
+
+.segmented-control>input:checked+label {
   transition: all 0.5s ease;
   color: var(--primary);
 }
-.segmented-control__1, .segmented-control__2, .segmented-control__3 {
+
+.segmented-control__1,
+.segmented-control__2,
+.segmented-control__3 {
   width: 6.8rem;
   height: 3.6rem;
   font-size: 1.4rem;
@@ -526,9 +618,13 @@ html {
   color: var(--greyDark);
   transition: all 0.5s ease;
 }
-.segmented-control__1:hover, .segmented-control__2:hover, .segmented-control__3:hover {
+
+.segmented-control__1:hover,
+.segmented-control__2:hover,
+.segmented-control__3:hover {
   color: var(--primary);
 }
+
 .segmented-control__color {
   position: absolute;
   height: 3.4rem;
@@ -539,17 +635,17 @@ html {
   pointer-events: none;
 }
 
-#tab-1:checked ~ .segmented-control__color {
+#tab-1:checked~.segmented-control__color {
   transform: translateX(0);
   transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#tab-2:checked ~ .segmented-control__color {
+#tab-2:checked~.segmented-control__color {
   transform: translateX(6.8rem);
   transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#tab-3:checked ~ .segmented-control__color {
+#tab-3:checked~.segmented-control__color {
   transform: translateX(13.6rem);
   transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -561,7 +657,10 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.icon__account, .icon__home, .icon__settings {
+
+.icon__account,
+.icon__home,
+.icon__settings {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -574,11 +673,17 @@ html {
   color: var(--greyDark);
   transition: all 0.5s ease;
 }
-.icon__account:active, .icon__home:active, .icon__settings:active {
+
+.icon__account:active,
+.icon__home:active,
+.icon__settings:active {
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
   color: var(--primary);
 }
-.icon__account:hover, .icon__home:hover, .icon__settings:hover {
+
+.icon__account:hover,
+.icon__home:hover,
+.icon__settings:hover {
   color: var(--primary);
 }
 
@@ -590,6 +695,7 @@ html {
   display: flex;
   flex-direction: column;
 }
+
 .slider__box {
   width: 100%;
   height: 1rem;
@@ -601,6 +707,7 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .slider__btn {
   width: 2rem;
   height: 2rem;
@@ -613,9 +720,11 @@ html {
   justify-content: center;
   align-items: center;
 }
-.slider__btn:hover ~ .slider__tooltip {
+
+.slider__btn:hover~.slider__tooltip {
   opacity: 1;
 }
+
 .slider__btn::after {
   content: "";
   position: absolute;
@@ -624,6 +733,7 @@ html {
   border-radius: 50%;
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
 }
+
 .slider__color {
   height: 100%;
   width: 50%;
@@ -634,6 +744,7 @@ html {
   background: var(--primary);
   background: linear-gradient(-1deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
 }
+
 .slider__tooltip {
   position: absolute;
   top: 2.6rem;
@@ -655,14 +766,17 @@ html {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     transform: scale(2);
     opacity: 0;
   }
 }
+
 .dribbble {
   position: fixed;
   font-size: 2.6rem;
